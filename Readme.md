@@ -1,0 +1,1 @@
+This project is for a simple web application that allows users to upload a CSV file, process it, and download the processed file. The application is built using Flask and Pandas.
