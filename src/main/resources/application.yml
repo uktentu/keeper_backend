@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+
+spring:
+  profiles:
+    active: dev # Set this to dev active the dev profile or prod to activate the prod profile
+
+  application:
+    name: Backend

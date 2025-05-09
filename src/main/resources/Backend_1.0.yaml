@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: Backend API
+  version: 1.0.0
+
+paths:
+  /example:
+    get:
+      summary: Get example data
+      operationId: getExample
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExampleResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    ExampleResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+    ErrorResponse:
+        type: object
+        properties:
+          error:
+            type: string
+          message:
+            type: string
