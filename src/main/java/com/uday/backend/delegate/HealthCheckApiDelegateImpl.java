@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HealthCheckApiDeligateImpl implements HealthCheckApiDelegate {
+public class HealthCheckApiDelegateImpl implements HealthCheckApiDelegate {
 
-    private static final Logger log = LoggerFactory.getLogger(HealthCheckApiDeligateImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(HealthCheckApiDelegateImpl.class);
 
     @Override
     public ResponseEntity<HealthCheckResponse> healthCheck(){

@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import com.uday.backend.model.ExampleResponse;
 
 @Service
-public class ExampleApiDeligateImpl implements ExampleApiDelegate {
+public class ExampleApiDelegateImpl implements ExampleApiDelegate {
 
-    private static final Logger log = LoggerFactory.getLogger(ExampleApiDeligateImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(ExampleApiDelegateImpl.class);
 
     @Override
     public ResponseEntity<ExampleResponse> getExample() {
